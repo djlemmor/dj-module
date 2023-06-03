@@ -2,8 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import IntroductionView from '../views/IntroductionView.vue'
-import Page1Content from '../views/pages/Page1Content.vue'
-import Page2Content from '../views/pages/Page2Content.vue'
+import PageContent from '../views/PageContent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,15 +23,15 @@ const router = createRouter({
       component: IntroductionView
     },
     {
-      path: '/page1content',
-      name: 'page1content',
-      component: Page1Content
+      path: '/pagecontent',
+      redirect: '/',
     },
     {
-      path: '/page2content',
-      name: 'page2content',
-      component: Page2Content
-    }
+      path: '/pagecontent/:page',
+      name: 'pagecontent',
+      component: PageContent,
+      props: true
+    },
   ]
 })
 

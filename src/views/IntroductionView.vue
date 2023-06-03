@@ -3,7 +3,7 @@
     <div class="bg-black flex-1">Module Image</div>
     <div class="bg-red-500 flex-1">Module Introducton</div>
     <RouterLink
-      :to="{ name: 'page1content' }"
+      :to="{ name: 'pagecontent', params: { page: 1 } }"
       class="absolute top-1/2 transform -translate-y-1/2 right-1 hover:bg-black hover:bg-opacity-50"
     >
       <svg
