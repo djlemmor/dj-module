@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mt-[3%]">
     <!-- PAGE TITLE -->
     <div>
       <h2 class="text-2xl font-bold text-yellow-500 uppercase">Getting Started</h2>

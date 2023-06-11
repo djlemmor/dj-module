@@ -1,5 +1,7 @@
 <template>
-  <component :is="page" :key="pageParams"></component>
+  <FadeTransition :mode="'out-in'">
+    <component :is="page" :key="pageParams"></component>
+  </FadeTransition>
 </template>
 
 <script setup>

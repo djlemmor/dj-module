@@ -3,7 +3,7 @@
     <RouterView />
   </DefaultLayout>
   <FooterNav :withFooter="withFooter" />
-  <SidebarNav :menu="menu" />
+  <SidebarNav :menuTransition="menuTransition" />
 </template>
 
 <script setup>
@@ -16,8 +16,8 @@ import SidebarNav from '@/components/navigation/SidebarNav.vue'
 const router = useRouter()
 const withFooter = ref(false)
 const currentPage = ref(0)
-const duration = ref(5)
-const menu = ref('-translate-x-96')
+const duration = ref(3)
+const menuTransition = ref('-translate-x-96')
 
 const setCurrentPage = (page) => {
   currentPage.value = page
@@ -25,28 +25,28 @@ const setCurrentPage = (page) => {
 
 const goToHomePage = () => {
   currentPage.value = 0
-  setMenu()
+  setMenuTransition()
   router.push({ name: 'home' })
 }
 
 const goToNextPage = () => {
   currentPage.value++
-  setMenu()
+  setMenuTransition()
   router.push({ name: 'pagecontent', params: { page: currentPage.value } })
 }
 
 const goToPrevPage = () => {
   currentPage.value--
-  setMenu()
+  setMenuTransition()
   router.push({ name: 'pagecontent', params: { page: currentPage.value } })
 }
 
-const setMenu = () => {
-  menu.value = '-translate-x-96'
+const setMenuTransition = () => {
+  menuTransition.value = '-translate-x-96'
 }
 
 const toggleMenu = () => {
-  menu.value = menu.value === '-translate-x-96' ? 'translate-x-0' : '-translate-x-96'
+  menuTransition.value = menuTransition.value === '-translate-x-96' ? 'translate-x-0' : '-translate-x-96'
 };
 
 provide('duration', duration)
@@ -58,7 +58,7 @@ provide('page', {
   goToPrevPage
 })
 provide('menu', {
-  setMenu,
+  setMenuTransition,
   toggleMenu
 })
 </script>

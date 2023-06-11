@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center bg-green-500 w-full py-16 align-center">
+  <div class="text-center bg-green-500 w-full py-16 my-auto">
     <h1 class="uppercase font-bold text-5xl relative py-6 text-black">VUE JS</h1>
     <RouterLink
       :to="{ name: 'introduction' }"
@@ -21,11 +21,9 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { inject, onMounted } from 'vue'
-const { setMenu } = inject('menu')
 
 const footer = inject('footer')
 onMounted(() => {
   footer.value = false
-  setMenu()
 })
 </script>

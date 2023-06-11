@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mt-[3%]">
     <!-- PAGE TITLE -->
     <div>
       <h2 class="text-2xl font-bold text-yellow-500 uppercase">Getting Started</h2>
@@ -14,7 +14,7 @@
       <div class="flex-1 text-sm">
         <div class="relative mb-4">
           <span class="text-xs absolute right-2 top-2 text-slate-500">vue</span>
-            <pre class="bg-gray-800 rounded p-6 mb-4"><code>&lt;script&gt;
+            <pre class="bg-gray-800 rounded p-6 mb-4" v-pre><code>&lt;script&gt;
 export default {
   data() {
     return {
