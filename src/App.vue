@@ -1,9 +1,9 @@
 <template>
-  <DefaultLayout>
-    <RouterView />
-  </DefaultLayout>
-  <FooterNav :withFooter="withFooter" />
-  <SidebarNav :menuTransition="menuTransition" />
+  <default-layout>
+    <router-view />
+  </default-layout>
+  <footer-nav :withFooter="withFooter" />
+  <sidebar-nav :menuTransition="menuTransition" />
 </template>
 
 <script setup>
@@ -46,8 +46,9 @@ const setMenuTransition = () => {
 }
 
 const toggleMenu = () => {
-  menuTransition.value = menuTransition.value === '-translate-x-96' ? 'translate-x-0' : '-translate-x-96'
-};
+  menuTransition.value =
+    menuTransition.value === '-translate-x-96' ? 'translate-x-0' : '-translate-x-96'
+}
 
 provide('duration', duration)
 provide('footer', withFooter)

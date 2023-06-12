@@ -1,6 +1,6 @@
 <template>
-  <div 
-    :class="menuTransition" 
+  <div
+    :class="menuTransition"
     class="fixed top-0 left-0 h-screen font-bold w-96 p-6 bg-gray-100 transition-transform"
   >
     <h2 class="text-2xl font-bold mb-2">
@@ -41,14 +41,14 @@
 import { inject } from 'vue'
 
 defineProps({
-  menuTransition: String,
-});
+  menuTransition: String
+})
 
 const { setMenuTransition } = inject('menu')
 const links = [
   {
     label: 'Introduction',
-    route: { name: 'introduction' },
+    route: { name: 'introduction' }
   },
   {
     label: 'Getting Started',
@@ -56,27 +56,27 @@ const links = [
     sublinks: [
       {
         label: 'The Progressive Framework',
-        route: { name: 'pagecontent', params: { page: 2 } },
+        route: { name: 'pagecontent', params: { page: 2 } }
       },
       {
         label: 'Single-File Components',
-        route: { name: 'pagecontent', params: { page: 3 } },
-      },
-    ],
+        route: { name: 'pagecontent', params: { page: 3 } }
+      }
+    ]
   },
   {
     label: 'Section',
     sublinks: [
       {
-        label: 'Title',
+        label: 'Title'
       },
       {
-        label: 'Title',
+        label: 'Title'
       },
       {
-        label: 'Title',
-      },
-    ],
-  },
-];
+        label: 'Title'
+      }
+    ]
+  }
+]
 </script>

@@ -12,36 +12,22 @@
     <div class="flex gap-10">
       <!-- LEFT SIDE -->
       <div class="flex-1 text-sm">
-        <div class="relative mb-4">
-          <span class="text-xs absolute right-2 top-2 text-slate-500">vue</span>
-            <pre class="bg-gray-800 rounded p-6 mb-4" v-pre><code>&lt;script&gt;
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  }
-}
-&lt;/script&gt;
-
-&lt;template&gt;
-  &lt;button @click="count++"&gt;Count is: {{ count }}&lt;/button&gt;
-&lt;/template&gt;
-
-&lt;style scoped&gt;
-button {
-  font-weight: bold;
-}
-&lt;/style&gt;</code></pre>
-        </div>
+        <code-block :buttonText="'vue'" :codeText="vueCodeText" />
       </div>
       <!-- RIGHT SIDE -->
       <div class="flex-1 text-lg">
         <p class="mb-4">
-          In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file format called Single-File Component (also known as *.vue files, abbreviated as SFC). A Vue SFC, as the name suggests, encapsulates the component's logic (JavaScript), template (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC format:
+          In most build-tool-enabled Vue projects, we author Vue components using an HTML-like file
+          format called Single-File Component (also known as *.vue files, abbreviated as SFC). A Vue
+          SFC, as the name suggests, encapsulates the component's logic (JavaScript), template
+          (HTML), and styles (CSS) in a single file. Here's the previous example, written in SFC
+          format:
         </p>
         <p>
-          SFC is a defining feature of Vue and is the recommended way to author Vue components if your use case warrants a build setup. You can learn more about the how and why of SFC in its dedicated section - but for now, just know that Vue will handle all the build tools setup for you.
+          SFC is a defining feature of Vue and is the recommended way to author Vue components if
+          your use case warrants a build setup. You can learn more about the how and why of SFC in
+          its dedicated section - but for now, just know that Vue will handle all the build tools
+          setup for you.
         </p>
       </div>
     </div>
@@ -49,9 +35,15 @@ button {
 </template>
 
 <script setup>
-import { onMounted, inject } from 'vue'
-const footer = inject('footer')
+import { onMounted, inject, ref } from 'vue'
+import CodeBlock from '@/components/codeblock/CodeBlock.vue'
+
 onMounted(() => {
   footer.value = true
 })
+
+const footer = inject('footer')
+const vueCodeText = ref(
+  '<script setup>\nimport { ref } from \'vue\'\nconst count = ref(0)\n<script>\n\n<template>\n  <button @click="count++">Count is: {{ count }}</button>\n</template>\n\n<style scoped>\nbutton {\n  font-weight: bold;\n}\n</style>'
+)
 </script>

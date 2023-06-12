@@ -19,7 +19,6 @@
   </div>
 </template>
 <script setup>
-import { RouterLink } from 'vue-router'
 import { inject, onMounted } from 'vue'
 
 const footer = inject('footer')

@@ -9,6 +9,6 @@ import FadeTransition from '@/transitions/FadeTransition.vue'
 const app = createApp(App)
 
 app.use(router)
-app.component('FadeTransition', FadeTransition);
+app.component('FadeTransition', FadeTransition)
 
 app.mount('#app')

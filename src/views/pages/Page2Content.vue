@@ -12,26 +12,8 @@
     <div class="flex gap-10">
       <!-- LEFT SIDE -->
       <div class="flex-1 text-sm">
-        <div class="relative mb-4">
-          <span class="text-xs absolute right-2 top-2 text-slate-500">js</span>
-            <pre class="bg-gray-800 rounded p-6 mb-4"><code>import { createApp } from 'vue' 
-
-createApp({ 
-  data() { 
-    return { 
-      count: 0 
-    } 
-  }
-}).mount('#app')</code></pre>
-        </div>
-        <div class="relative">
-        <span class="text-xs absolute right-2 top-2 text-slate-500">template</span>
-        <pre class="bg-gray-800 rounded p-4" v-pre><code>&lt;div id="app"&gt;
-  &lt;button @click="count++"&gt;
-    Count is: {{ count }}
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-        </div>
+        <code-block :buttonText="'js'" :codeText="jsCodeText" />
+        <code-block :buttonText="'template'" :codeText="templateCodeText" />
       </div>
       <!-- RIGHT SIDE -->
       <div class="flex-1 text-lg">
@@ -56,8 +38,17 @@ createApp({
 </template>
 
 <script setup>
-import { onMounted, inject } from 'vue'
+import { onMounted, inject, ref } from 'vue'
+import CodeBlock from '@/components/codeblock/CodeBlock.vue'
+
 const footer = inject('footer')
+const jsCodeText = ref(
+  "import { createApp, ref } from 'vue'\n\ncreateApp({\n  setup() {\n    return {\n      count: ref(0)\n    }\n  }\n}).mount('#app')"
+)
+const templateCodeText = ref(
+  '<div id="app">\n  <button @click="count++">\n    Count is: {{ count }}\n  </button>\n</div>'
+)
+
 onMounted(() => {
   footer.value = true
 })

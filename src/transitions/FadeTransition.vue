@@ -1,10 +1,6 @@
 <template>
-  <Transition
-    name="fade"
-    :appear="appear"
-    :mode="mode"
-  >
-    <slot></slot> 
+  <Transition name="fade" :appear="appear" :mode="mode">
+    <slot></slot>
   </Transition>
 </template>
 
@@ -17,7 +13,7 @@ defineProps({
   mode: {
     type: String,
     default: 'default'
-  },
+  }
 })
 </script>
 
