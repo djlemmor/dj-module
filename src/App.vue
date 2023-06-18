@@ -29,6 +29,12 @@ const goToHomePage = () => {
   router.push({ name: 'home' })
 }
 
+const goToAboutPage = () => {
+  currentPage.value = 0
+  setMenuTransition()
+  router.push({ name: 'about' })
+}
+
 const goToNextPage = () => {
   currentPage.value++
   setMenuTransition()
@@ -55,6 +61,7 @@ provide('footer', withFooter)
 provide('page', {
   setCurrentPage,
   goToHomePage,
+  goToAboutPage,
   goToNextPage,
   goToPrevPage
 })

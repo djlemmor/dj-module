@@ -1,22 +1,22 @@
 <template>
-  <div class="container mt-[3%]">
+  <div class="container mx-auto p-12">
     <!-- PAGE TITLE -->
     <div>
       <h2 class="text-2xl font-bold text-yellow-500 uppercase">Getting Started</h2>
     </div>
     <!-- MAIN CONTENT -->
-    <div class="flex justify-between gap-10">
+    <div class="flex flex-col justify-between xl:flex-row xl:gap-10">
       <p class="flex-1"></p>
       <h3 class="text-xl font-bold flex-1 text-green-500 my-4">The Progressive Framework</h3>
     </div>
-    <div class="flex gap-10">
+    <div class="flex flex-col xl:flex-row xl:gap-10">
       <!-- LEFT SIDE -->
-      <div class="flex-1 text-sm">
+      <div class="flex-1 text-xs xl:text-sm">
         <code-block :buttonText="'js'" :codeText="jsCodeText" />
         <code-block :buttonText="'template'" :codeText="templateCodeText" />
       </div>
       <!-- RIGHT SIDE -->
-      <div class="flex-1 text-lg">
+      <div class="flex-1 text-base xl:text-lg">
         <p class="mb-4">
           Vue is a framework and ecosystem that covers most of the common features needed in
           frontend development. But the web is extremely diverse - the things we build on the web

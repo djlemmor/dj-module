@@ -1,35 +1,41 @@
-# dj-module
+# My DJmodule Website
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository showcases a module-based website that I developed during my time at PV Multimedia as an HTML5 Developer. The website serves as a demonstration of my skills and expertise in creating dynamic and engaging learning platforms.
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [My DJmodule Website](#my-djmodule-website)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [Contact](#contact)
 
-## Customize configuration
+## Description
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+My portfolio website is a place for me to showcase my web development skills and projects. It includes information about me, my work experience, skills, and the projects I have worked on. The website also includes links to my social media profiles and a way for visitors to contact me.
 
-## Project Setup
+## Technologies Used
 
-```sh
-npm install
-```
+The following technologies were used to build this website:
 
-### Compile and Hot-Reload for Development
+- Vue.js
+- TailwindCSS
 
-```sh
-npm run dev
-```
+## Features
 
-### Compile and Minify for Production
+- **Module-based Structure:** The website follows a modular approach, allowing for easy organization and presentation of content. Each module focuses on a specific topic, providing a comprehensive learning experience.
 
-```sh
-npm run build
-```
+- **Responsive Design:** The website is built with a responsive design, ensuring that it adapts to different screen sizes and devices, providing a seamless user experience.
 
-### Lint with [ESLint](https://eslint.org/)
+- **Interactive Learning:** Engage with interactive elements and multimedia resources within each module. Enhance your understanding through interactive exercises and quizzes.
 
-```sh
-npm run lint
-```
+## Usage
+
+1. Open this [link](https://djlemmor.github.io/dj-module/) in a web browser to view the website.
+2. Click on the icons in the navigation bar to explore different sections of the website.
+
+## Contact
+
+If you have any questions or would like to get in touch, please feel free to email me at [lemmornuique@gmail.com](mailto:lemmornuique@gmail.com).

@@ -1,6 +1,8 @@
 <template>
-  <div class="w-full text-4xl font-bold text-center text-yellow-500 uppercase my-auto">
-    Getting Started
+  <div class="h-screen flex justify-center items-center">
+    <h1 class="text-3xl xl:text-4xl font-bold text-center text-yellow-500 uppercase">
+      Getting Started
+    </h1>
   </div>
 </template>
 

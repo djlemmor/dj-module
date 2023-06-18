@@ -1,7 +1,7 @@
 <template>
   <div
     :class="menuTransition"
-    class="fixed top-0 left-0 h-screen font-bold w-96 p-6 bg-gray-100 transition-transform"
+    class="fixed top-0 left-0 h-full font-bold w-96 p-6 bg-gray-100 transition-transform"
   >
     <h2 class="text-2xl font-bold mb-2">
       <RouterLink
