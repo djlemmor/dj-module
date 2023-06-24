@@ -1,20 +1,15 @@
 # My DJmodule Website
 
-This repository showcases a module-based website that I developed during my time at PV Multimedia as an HTML5 Developer. The website serves as a demonstration of my skills and expertise in creating dynamic and engaging learning platforms.
+This repository showcases a module-based website that is similar to the one I developed during my time at PV Multimedia as an HTML5 Developer. The website serves as a demonstration of my skills and expertise in creating dynamic and engaging learning platforms.
 
 ## Table of Contents
 
 - [My DJmodule Website](#my-djmodule-website)
   - [Table of Contents](#table-of-contents)
-  - [Description](#description)
   - [Technologies Used](#technologies-used)
   - [Features](#features)
   - [Usage](#usage)
   - [Contact](#contact)
-
-## Description
-
-My portfolio website is a place for me to showcase my web development skills and projects. It includes information about me, my work experience, skills, and the projects I have worked on. The website also includes links to my social media profiles and a way for visitors to contact me.
 
 ## Technologies Used
 
